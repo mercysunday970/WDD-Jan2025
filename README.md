@@ -12,8 +12,7 @@ Welcome to our Web Design and Development Course! In this guide, you'll learn ho
 
 Start by forking the WDD-Jan2025 repository to your GitHub account. This creates a personal copy of the repository where you can make changes without affecting the original.
 
-- Go to the repository page: (WDD-Jan2025)[https://github.com/B-rder-ess-Dev-Hub/WDD-Jan2025].
-
+- Go to the repository page: [WDD-Jan2025](https://github.com/B-rder-ess-Dev-Hub/WDD-Jan2025).
 - Click the Fork button at the top-right corner of the page.
 
 ### 2. Clone the Forked Repository
@@ -94,7 +93,7 @@ git push origin week-1-john-project
 
 ### 8. Create a Pull Request
 
-1. Go to the original GitHub repository in your browser: (WDD-Jan2025)[https://github.com/B-rder-ess-Dev-Hub/WDD-Jan2025].
+1. Go to the original GitHub repository in your browser: [WDD-Jan2025](https://github.com/B-rder-ess-Dev-Hub/WDD-Jan2025).
 
 2. Click on the Pull Requests tab.
 
