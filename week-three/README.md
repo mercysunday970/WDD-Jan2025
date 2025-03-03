@@ -8,7 +8,6 @@ Your task is to recreate the login form design shown in the provided image using
 ### **Requirements**
 - Use **HTML** to structure the page elements.
 - Use **CSS** to style the page and match the given design.
-- Implement a responsive layout that looks good on different screen sizes.
 - Ensure the login form includes:
   - An email input field.
   - A password input field.
@@ -17,7 +16,6 @@ Your task is to recreate the login form design shown in the provided image using
   - A "Forgot Username/Password?" link.
   - A "Sign Up" link for new users.
 - Use a visually appealing background color similar to the one in the image.
-- Use proper form validation where applicable.
 
 ## **Submission Instructions**
 Follow the contribution guide below to submit your assignment properly.
