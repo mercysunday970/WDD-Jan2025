@@ -1,64 +1,67 @@
 h1 {
     text-align: center;
-    font-family:"Georgia", "Serif", monospace;
+    font-family:"Arial", Helvetica, sans-serif;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: normal;
 }
 Input[type="Email"] {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", Helvetica, sans-serif;
     font-size: 20px; 
-    width: 100%;
-    padding: 2%;
+    width: 90%;
+    padding: 5%;
     cursor: text;
    }
-
     Input[type="Password"] {
-        font-family: "Times New Roman", Times, serif;
-        font-size: 20px;
-        width: 100%;
-        padding: 2%;
-        cursor: text;
+    font-family: "Arial", Helvetica, sans-serif;
+    font-size: 20px;
+    width: 90%;
+    padding: 5%;
+    cursor: text;
     }
 label[for="Password:"] {
     font-weight: bold;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-family: "Arial", Helvetica, sans-serif;
 }
   label[for="Email:"] {
-        font-weight: bold;
-        font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Arial", Helvetica, sans-serif;
 }
 label[for="Show Password"] {
     font-weight: lighter;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", Helvetica, sans-serif;
 }
 body {
-    background-color: #0D6E91;
+    background-color:#0181aa;
     justify-content: center;
     display: flex;   
 }
 .login-container {
-    
-    background-color: white;
-    text-align: justify;
-    width: 350px;
-    height: 350px;
-    position: relative;
-    padding: 7%;
-    border-radius: 5%;
+    margin-top: 35px;
+    background-color:white;
+    padding: 5%;
+    border-radius: 3%;
+    width: 400px;
+    height: 450px;
+    margin-bottom: 35px;
 }
 #SIGN-IN{
-    font-size: 40px;
+    font-size: 15px;
     color: rgb(243, 236, 236);
-    background-color: #003440;
-    width: 105%;
-    padding: 0.5%;
+    background-color: #006e98;
+    width: 101%;
+    padding: 5%;
     border: none;
     cursor: default;
 }
 p {
     font-family:Arial, Helvetica, sans-serif;
+a{
+    text-decoration: none;
+    color: #0181aa;
 }
-
+}
 p {
     text-align: center;
 }
