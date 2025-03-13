@@ -148,9 +148,12 @@ hr {
 .icon1 {
     height: 20px;
    left: 12px;
+   background: none;
+   border: none;
    position: absolute;
     cursor: pointer;
     width: 20px
+    
     
 }
 .icon2 {
@@ -199,3 +202,5 @@ h3 {
 h3 a {
     color: rgb(9, 76, 102);
 }
+
+
