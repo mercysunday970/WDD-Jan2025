@@ -8,7 +8,6 @@
 
 body {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
 }
 
 .container{
@@ -70,11 +69,39 @@ body {
 }
 
 .white-section > .main-content {
-    width: 400px;
+    max-width: 400px;
+}
+
+.main-content > div > h2{
+    font-size: 1.875rem;
+    color: #000000;
+    margin-bottom: 0.6em;
+}
+
+
+.main-content > div > p{
+    color: #8692A6;
+    font-size: 1rem;
+}
+
+
+form {
+    margin-block: 2.5em;
+}
+
+label{
+    color: #696F79;
+}
+
+.input-field{
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #8692A6;
+    padding-inline: 0.5em;
+    margin-block: 0.875em 1.5em;
 }
 
 button{
-    all: unset;
     background-color: #2C73EB;
     color: white;
     font-weight: 500;
@@ -82,13 +109,42 @@ button{
     text-align: center;
     padding-block: 1em;
     border-radius: 6px;
+    margin-top: 1.75em;
+    border: none;
 }
 
-.input-field{
-    all: unset;
-    width: 100%;
-    padding-block: 1em;
-    border-radius: 6px;
-    border: 1px solid #8692A6;
-    padding-inline: 0.5em;
+.input-field, button {
+    height: 64px;
+}
+
+.sign-up-container > p{
+    text-align: center;
+    color: #696F79;
+    font-weight: 500;
+}
+
+.sign-up-container > p > a{
+    color: #2C73EB;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blue-section{
+       display: none;
+    }
+
+    .white-section{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .container{
+        padding-inline: 1em;
+    }
+
+    .input-field, button{
+        height: 50px;
+    }
 }
