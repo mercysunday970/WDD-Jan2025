@@ -1,0 +1,119 @@
+body {
+    background-color: #101319;
+    margin: 0;
+}
+#Profile_Icon.jpg {
+    border-radius: 50%;
+}
+section {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #0181aa;
+}
+input{
+    border-radius: 50px;
+    width: 580px;
+    height: 42px;
+    outline: none;
+    background-color: #3f4555;
+    padding: none;
+    text-align: left;
+    text-indent: 8%;
+    display: flex;
+    justify-self: center;
+  }
+  #Icon1 {
+    position: absolute;
+    top: 36%;
+    left: 28.5%;
+    object-fit: cover;
+  }
+  #Icon2 {
+    position: absolute;
+    top: 36%;
+    left: 66%;
+    object-fit: cover;
+  }
+  #Icon3 {
+    position: absolute;
+    top: 36%;
+    left: 69%;
+    object-fit: cover;
+  }
+.button {
+    background-color: #3f4555;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px ;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrapper {
+    text-align: center;
+    a {
+        text-decoration: none;
+      }
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+#one {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 13px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+#two {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 13px;
+    a {
+        text-decoration: none;
+        color: #6f91ce;
+    }
+}
+#three {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15px;
+    text-indent: 2.35%
+}
+#four {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+.footer-top {
+    background-color: #1f2128;
+    position: fixed;
+    bottom: 8%;
+    width: 100%;
+    height: 8%;
+    border-bottom: 1px solid #757b84;
+  }
+  .footer-bottom {
+    background-color: #1f2128;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+  }
