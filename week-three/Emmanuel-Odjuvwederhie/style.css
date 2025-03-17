@@ -45,11 +45,13 @@ body {
 .login-container {
     
     background-color: white;
+    border-radius: 3%;
     text-align: left;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 455px;
     position: relative;
-    padding: 5%;
+    padding: 2em 5em 2em 4em;
+    margin: 3em 3em
 }
 p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
