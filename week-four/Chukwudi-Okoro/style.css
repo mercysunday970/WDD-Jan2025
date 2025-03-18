@@ -5,6 +5,10 @@ body {
 #Profile_Icon.jpg {
     border-radius: 50%;
 }
+#Google-Logo {
+  max-width: 100%;
+  object-fit: contain;
+}
 #search-bar{
     border-radius: 25px;
     border: none;
