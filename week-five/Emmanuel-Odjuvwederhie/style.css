@@ -30,11 +30,12 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
+    padding: auto;
+    background-color: rgb(219, 211, 211);
     justify-content: center;
     align-items: center;
-    min-height: auto;
+    height: 90%;
+    max-height: auto;
     
 }
   .nav2 {
@@ -50,8 +51,10 @@ body {
     padding-inline: 20px;
     background-color: rgb(9, 223, 27);
     color: white;
-    margin-left: 72em;
-    margin-top: -100em;
+    margin-left: 78em;
+    margin-top: -2em;
+    display: flex;
+    position: absolute;
 
     
 }
@@ -171,7 +174,7 @@ button {
 }
 .bodies > button {
     margin-left: 400px;
-    color: rgb(10, 9, 9);
+    color: white;
     font-size: 12px;
     
 }
@@ -254,7 +257,7 @@ button {
 }
 .helping > h2 {
     color: rgb(20, 202, 20);
-    margin-top:  180px;
+    margin-top:  190px;
     margin-left: 40px;
   position: absolute;
 }
@@ -416,8 +419,6 @@ position: relative;
     position: relative;
     margin-top: 90px;
     background-color: silver;
-    margin-left: 0.4em;
-    margin-right: 240px;
    
 }
 .support> h2 {
@@ -469,10 +470,9 @@ position: relative;
     display: flex;
     padding-bottom: 4em;
     padding-top: 40px;
-    margin-left: -1em;
-    margin-right: -1em;
+    width: 100%;
     color: white;
-    width: auto;
+    
 }
 .last-image {
     margin-left: -66em;
