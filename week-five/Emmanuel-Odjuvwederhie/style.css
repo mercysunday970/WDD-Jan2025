@@ -31,11 +31,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: auto;
-    background-color: rgb(219, 211, 211);
+    background-color: white;
     justify-content: center;
     align-items: center;
     height: 90%;
     max-height: auto;
+    margin-top: 1em;
     
 }
   .nav2 {
@@ -49,7 +50,7 @@ body {
 .submit > button {
     padding-block: 7px;
     padding-inline: 20px;
-    background-color: rgb(9, 223, 27);
+    background-color: rgb(8, 148, 22);
     color: white;
     margin-left: 78em;
     margin-top: -2em;
@@ -71,7 +72,7 @@ body {
   padding-bottom: 6em;
   padding-top: 3em;
   margin: 0 auto;
-  background-color: silver;
+  background-color: rgb(243, 240, 240);
 
 
 }
@@ -183,7 +184,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
     text-align: center;
-    background-color: silver;
+    background-color: rgb(243, 240, 240);
     margin-bottom: 20px;
     padding-top: -50em;
 }
@@ -269,7 +270,7 @@ button {
   font-size: 12px;
 }
 .helping {
-    background-color: silver;
+    background-color: rgb(243, 240, 240);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -307,7 +308,7 @@ button {
     margin-right: 60rem;
 }
 .black {
-    background-color: silver;
+    background-color: rgb(243, 240, 240);
     padding-bottom: 1em;
 }
   
@@ -418,7 +419,7 @@ position: relative;
     width: 100%;
     position: relative;
     margin-top: 90px;
-    background-color: silver;
+    background-color: rgb(243, 240, 240);
    
 }
 .support> h2 {
