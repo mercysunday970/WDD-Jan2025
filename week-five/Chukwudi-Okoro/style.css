@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* The line above already imports the required typeface for you */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables declared below */
+
+:root {
+    --primary-color: #28CB8B;  /* Primary */
+    --secondary-color: #263238; /* Secondary */
+    --d_grey-color: #4D4D4D; /* D_Grey */
+    --grey-color: #717171; /* Grey */
+    --light-grey-color: #89939E; /* L_Grey */
+    --white-color: #FFFFFF; /* White */
+    --silver-background-color: #F5F7FA; /* Silver background*/
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--silver-background-color);
+    width: auto;
+    height: 2880px;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: #4D4D4D;
+
+  }
+.container {
+    height: 60px;
+    width: auto;
+
+
+}
+.reg-header-button {
+    background-color: #4CAF4F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    cursor: pointer;
+
+
+}
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 1.3%;
+    width: auto;
+    justify-content: center;
+    background-color: white;
+    
+
+
+}
+.header-Logo {
+    display: flex;
+
+}
+.header-texts {
+    display: flex;
+    align-self: auto;
+    gap: 20px;
+    margin-left: 30%;
+    
+}
+.header {
+    width: auto;
+}
+.txt-img {
+    display: flex;
+    align-items: center;
+    gap: 26%;
+    width: auto;
+    height: 380px;
+    background-color: #F5F7FA;
+}
+
+.reg-col1-button {
+    background-color: #4CAF4F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    cursor: pointer;
+
+}
+.learn-col7-button {
+    background-color: #4CAF4F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+.meet-all-col-button {
+    color: #4CAF4F;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+.readmore-col0-button {
+    color: #4CAF4F;
+    border-radius: 5px ;
+    cursor: pointer;
+}
+.Get-Demo-button {
+    background-color: #4CAF4F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px ;
+    cursor: pointer;
+
+
+}
+.col1-text {
+    line-height: 52px;
+    margin-left: auto;
+}
+h1 {
+    font-size: 45px;
+    color: #4D4D4D;
+}
+.p1 {
+    font-size: 11px;
+    color: #717171;
+}
+.col1-img {
+    margin-right: auto;
+}
+.column2 {
+    background-color: red;
+    height: 130px;
+}
+.elipses {
+    text-align: center;
+
+
+
+}
+.column1 {
+    align-self: auto;
+    display: inline;
+}
+.col1-elipses {
+    color: #4CAF4F;
+    font-size: 50px;
+}
+.col2-elipses {
+    color: #4CAF4F;
+    font-size: 50px;
+    opacity: 30%;
+}
+.col3-elipses {
+    color: #4CAF4F;
+    font-size: 50px;
+    opacity: 30%;
+}
+
+.column3 {
+    height: 85px;
+    align-self: auto;
+    display: inline;
+    background: #28CB8B;
+}
