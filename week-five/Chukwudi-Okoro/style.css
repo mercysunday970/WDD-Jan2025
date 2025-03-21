@@ -23,8 +23,8 @@ body {
     font-family: "Inter", sans-serif;
     background-color: var(--silver-background-color);
     width: auto;
-    height: 2880px;
-    align-items: center;
+    height: auto
+
 
 }
 
@@ -73,6 +73,7 @@ a {
 }
 .header {
     width: auto;
+    background-color: white;
 }
 .txt-img {
     display: flex;
@@ -81,8 +82,12 @@ a {
     width: auto;
     height: 380px;
     background-color: #F5F7FA;
-}
 
+}
+.column1 {
+    background-color: red;
+    height: 130px;
+}
 .reg-col1-button {
     background-color: #4CAF4F;
     color: white;
@@ -133,8 +138,79 @@ h1 {
     margin-right: auto;
 }
 .column2 {
-    background-color: red;
+    background-color: white;
     height: 130px;
+}
+.col2-text-icons {
+    text-align: center;
+}
+.col3-contents {
+    background-color:white;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+
+}
+.column4 {
+    background-color: white;
+    height: 280px;
+    text-align: center;
+
+}
+.column5 {
+    display: flex;
+    align-items: center;
+    gap: 26%;
+    width: auto;
+    height: 280px;
+    background-color: white;
+}
+.column6 {
+    display: flex;
+    align-items: center;
+    gap: 26%;
+    width: auto;
+    height: 200px;
+    background-color: #F5F7FA;
+}
+.col6-imgages {
+    display: flex;
+}
+.column7 {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 320px;
+    background-color: white;
+}
+.column8 {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 270px;
+    background-color: #F5F7FA;
+}
+.column9 {
+    text-align: center;
+    width: auto;
+    height: 85px;
+    background-color: white;
+
+}
+.column10 {
+    background-color: white;
+    display: flex;
+}
+.column11 {
+    background-color: #F5F7FA;
+    display: flex;
+    height: 210px;
+}
+.column12 {
+    background-color: #263238;
+    display: flex;
+    height: 230px;
+    
 }
 .elipses {
     text-align: center;
