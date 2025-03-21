@@ -214,13 +214,80 @@ h1 {
 .column6 {
     display: flex;
     align-items: center;
-    gap: 26%;
     width: auto;
     height: 200px;
     background-color: #F5F7FA;
+    justify-content: center;
+    gap: 20%;
+    margin-right: 10%;
 }
 .col6-imgages {
     display: flex;
+}
+.col6-txt1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #4D4D4D;
+}
+.col6-txt2 {
+    color: #4D4D4D;
+}
+.col6-icon1 {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+.col6-icon1-num {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+.col6-icon1-txt {
+    color: #717171;
+}
+.col6-icon2 {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+.col6-icon2-num {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+.col6-icon2-txt {
+    color: #717171;
+}
+.col6-icon3 {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+.col6-icon3-num {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+.col6-icon3-txt {
+    color: #717171;
+}
+.col6-icon4 {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+.col6-icon4-num {
+    font-size: 25px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+.col6-icon4-txt {
+    color: #717171;
+}
+.col6-icon-txt {
+    display: grid;
+    grid-template-columns: repeat(2, 80%);
+    gap: 2em;
 }
 .column7 {
     display: flex;
