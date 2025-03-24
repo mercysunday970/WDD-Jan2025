@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* The line above already imports the required typeface for you */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Color variables declared below */
+
+:root {
+    --primary-color: #28CB8B;  /* Primary */
+    --secondary-color: #263238; /* Secondary */
+    --d_grey-color: #4D4D4D; /* D_Grey */
+    --grey-color: #717171; /* Grey */
+    --light-grey-color: #89939E; /* L_Grey */
+    --white-color: #FFFFFF; /* White */
+    --silver-background-color: #F5F7FA; /* Silver background*/
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color:white
+}
+h1{
+    color: #4d4d4d;
+}
+
+.navbar{
+    padding-inline:  200.23px;
+    padding-block: 20.23px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav li{
+    list-style: none;
+    display: inline-block;
+    
+}
+.nav li a{
+    color: #4e4e4e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+ nav button{
+   background-color: #4baf4f;
+   margin-right: 20px;
+   border-radius: 7%;
+   padding: 10px;
+   border: none;
+   width: 180px;
+   text-align: center;
+}
+
+button a{
+    color: white;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    background-color:#f6f7fb;
+    height: 20em;
+    text-align: left ;
+    
+}
+.Content-section{
+    width: 60%;
+    margin-inline:200.23px 100.23px ;
+    margin-block: 66.82px;
+    text-align: justify;
+}
+.Content-section h1{
+    color: #4d4d4d;
+    font-size: xx-large;
+    font-weight: 600;
+    font-family: Inter;
+
+}
+.Content-section h2{
+    color: #4baf4f;
+    font-size: xx-large;
+    font-weight: 600;
+    margin-block: 10px;
+}
+.Content-section p{
+    color: #717171;
+}
+.Content-section button{
+    all: unset;
+    background-color: #4baf4f;
+    margin-right: 20px;
+    border-radius: 7%;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: ;
+    font-size: 20px;
+    margin-block: 30px;
+}
+.container2{
+    justify-content: space-between;
+    text-align: center;
+    margin-block: 40px;
+
+}
+.container2 p{
+    color: #717171;
+    margin-block: 20px;
+}
+
+.container2 ul{
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    margin-inline: 200.23px;
+}
+.text1{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    display: block;
+    font-size: large;
+}
+.text1 h1{
+    margin-block: 5px;
+}
+.text1 p{
+    color: #717171;
+    margin-block: 5px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 400px;
+    margin-inline:200.23px ;
+}
+.main-container img{
+    margin-block: 20px 0px;
+
+}
+.main-container h1{
+    text-align: center;
+    margin-block: 15px ;
+    font-weight:900;
+    margin-inline: 200.23px;
+}
+
+.main-container div{
+    height: 304px;
+    width: 320px;
+    border-radius: 2%;
+    text-align: center;
+    justify-items: center;
+    margin-block: 20px;
+    box-shadow: 0px 0px 15px #e9edef;
+}
+
+.main-container p{
+    padding-inline: 6px;
+}
+
+.second-container{
+    display: flex;
+    margin-inline: 200.23px;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+}
+.imagesn{
+    width: 60%;
+    margin-inline: 100.23px ;
+    margin-block: 66.82px;
+    text-align: justify;
+    height: 120px;
+    padding-inline: 30px;
+}
+
+.txt2{
+    width: 60%;
+    margin-top: 20px;
+}
+.txt2 button{
+    all: unset;
+    margin-block: 20px;
+    background-color: #4baf4f;
+    margin-right: 20px;
+    border-radius: 5%;
+    padding: 10px;
+    border: none;
+    width: 110px;
+    text-align: center;
+    color: white;
+}
+.txt2 h1{
+    all: unset;
+    font-size: xx-large;
+    font-weight: bolder;
+    size: 300px;
+    color: #4d4d4d;
+    margin-block: 30px;
+    padding-block: 30px;
+}
+.txt2 p{
+    margin-block: 20px;
+}
+
+.third-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f7fb;
+    padding-right: 200.23px;
+}
+
+.section-5{
+    margin-block: 50px;
+    margin-inline: 200.23px;
+    justify-content: center;
+
+}
+.section-5 h1{
+    margin-bottom: 5px;
+    font-size: xx-large;
+
+}
+.icon-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+.flex-box{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    line-height: 100px;
+    padding-inline: 200px;
+}
+.flex-box p{
+    padding-inline: 20px;
+}
+.Illustrate{
+    display: flex;
+    margin-inline: 200.23px;
+    justify-content: space-between;
+    margin-block: 30px;
+}
+.Illustrate img{
+    padding-right: 200.23px;
+    justify-content: space-between;
+    
+    text-align: justify;
+    
+}
+.value{
+    margin-block: 30px;
+    margin-inline: 20px;
+    padding-left: 70px;
+}
+.value h1{
+    margin-block: 10px;
+    
+
+}
+.value button{
+    all: unset;
+    background-color: #4baf4f;
+    margin-block: 20px;
+    margin-right: 20px;
+    border-radius: 5%;
+    padding: 10px;
+    border: none;
+    width: 110px;
+    text-align: center;
+    color: white;
+}
+.four{
+    display: flex;
+    justify-content: space-between;
+    background-color:#f6f7fb;
+    padding-block: 20px;
+}
+
+
+.Image4{
+    margin-inline: 212.3px  30px;
+    color: #4d4d4d;
+}
+.text4{
+    color: #4d4d4d;
+    padding-block: 20px;
+    margin-inline:  20px 200.23px;
+    
+}
+.text4 h3{
+    margin-block: 10px;
+    color: #4baf4f;
+}
+.text4 h6{
+    all: unset;
+    margin-bottom: 10px;
+    color: #89939d;
+}
+
+.image{
+    margin-top: 20px;
+    list-style: none; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.image button{
+    all: unset;
+    color:#4baf4f;
+    padding-inline: 30px;
+    font-weight: bold;
+}
+
+.image-text2{
+    text-align: center;
+    padding-inline: 200.23px;
+    padding-block: 50px;
+}
+.image-text2 p1{
+    padding-inline: 200px;]
+    text-align: center;
+    padding-block: 30px;
+}
+
+.image-text3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-block: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.t{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-block: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.image-text3 img{
+    width: auto;
+    height: auto;
+}
+.images-text{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 
+    
+}
+.texts{
+    padding: 20px;
+    box-shadow: 0px 0px 15px #e9edef;
+    width: 200px;
+}
+.texts button{
+    all: unset;
+    color:#4baf4f;
+    padding-block: 20px;
+}
+
+.firstone{
+    background-color:#f6f7fb;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding-block: 22.64px;
+}
+.fullwidth{
+    margin-block: 22.64px;
+    padding-bottom: 20px;
+}
+.fullwidth h1{
+    margin-bottom: 20px;
+}
+
+.firstone button{
+    background-color: #4baf4f;
+    padding-block: 20px;
+    padding-inline: 20px;
+    border-radius: 5%;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size:medium;
+}
+
+.footer{
+    background-color: #273238;
+    display: flex;
+    justify-content: space-between ;
+    padding-block: 25px;
+    padding-inline:200.23px ;
+    color: white;
+    list-style: none;
+}
+.Footer1{
+    list-style: none;
+
+}
+.Footer1 p{
+    padding-block: 10px;
+}
+.Footer1 img{
+    padding-block: 20px;
+}
+.Footer1 ul{
+    padding-inline:0px 50px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+.Footer2{
+    padding-block: 5px;
+}
+.Footer2 h1{
+    color: white;
+    padding-block: 15px;
+
+}
+.Footer2 ul{
+    list-style: none;
+    padding-inline: 10px;
+}
+.Footer2 li{
+    padding-block: 5px;
+}
+
+.Footer3{
+    padding-block: 5px;
+}
+
+.Footer3 h1{
+    padding-block: 15px;
+    color: white;
+}
+.Footer3 li{
+    list-style: none;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.Footer4{
+    padding-block: 15px;
+}
+.Footer4 h1{
+    color: white;
+    padding-block: 20px;
+}
+
+.footer5{
+    width: 100%
+    position: relative;
+}
+.footer5 input[type="text"]{
+    padding-block: 10px;
+    padding-inline: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: white;
+}
+
+/*The rest of your CSS goes here */

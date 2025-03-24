@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* The line above already imports the required typeface for you */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color variables declared below */
+
+:root {
+    --primary-color: #28CB8B;  /* Primary */
+    --secondary-color: #263238; /* Secondary */
+    --d_grey-color: #4D4D4D; /* D_Grey */
+    --grey-color: #717171; /* Grey */
+    --light-grey-color: #89939E; /* L_Grey */
+    --white-color: #FFFFFF; /* White */
+    --silver-background-color: #F5F7FA; /* Silver background*/
+    --button-color: #4CAF4F;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--silver-background-color);
+    background-color: white; /* Remove this line. It's just an example to show you how to use the color variables */
+}
+
+ul li{
+    list-style: none;
+}
+
+/* The rest of your CSS goes here */
+
+header {
+    display: flex;
+    padding-block: 45px;
+    padding-inline: 130px;
+    width: 100%;
+    height: 58px;
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.header-logo {
+    width: 108px;
+    height: 17px;
+
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 0;
+}
+
+header div ul {
+    display: flex;
+    gap: 16.71px;
+    color: var(--d_grey-color);
+}
+
+.register-btn {
+    width: 133px;
+    height: 36px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 3px;
+    color: var(--white-color);
+    font: inherit;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 417px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    gap: 72px;
+    align-items: center;
+    height: 100%;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: -10px;
+}
+
+.hero-section-texts {
+    display: grid;
+    gap: 22px;
+}
+
+.hero-section-texts h1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 52px;
+    color: var(--d_grey-color);
+}
+
+.green-text {
+    color: var(--button-color);
+}
+
+.hero-section-texts p {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--d_grey-color);
+}
+
+.hero-section-texts .register-btn {
+    height: 36px;
+    width: 90px;
+    border-radius: 3px;
+    line-height: 17px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.hero-section-img {
+    width: 272px;
+    height: 283px;
+}
+
+.sec-one, .sec-six{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.client-logo {
+    width: 100%;
+    margin-block: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.community-logos {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.community-logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 17px 22px;
+    margin-top: 13px;
+    justify-content: center;
+    box-shadow: 0 1.4px 2.8px #ABBED133;
+    flex: 1;
+    height: 182px;
+}
+
+.community-logos div p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.community-logos div h3 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 25px;
+    color: var(--grey-color);
+}
+
+.sec-one h1, .sec-six h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+    color: var(--d_grey-color);
+    padding-bottom: 6px;
+}
+
+.sec-one p, .sec-six p {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--grey-color);
+}
+
+.sec-two, .sec-four{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.unlock-text-content h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+    color: var(--d_grey-color);
+}
+
+.unlock-text-content p{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: var(--grey-color);
+}
+
+.unlock-text-content button {
+    line-height: 17px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.sec-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 202px;
+    width: 100%;
+    padding-block: 45px;
+    padding-inline: 130px;
+    margin: 0 auto;
+    background-color: #F5F7FA;
+}
+
+.achievement-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.achievement-texts h1 {
+    color: var(--d_grey-color);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 31px;
+}
+
+.achievement-texts p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    color: var(--grey-color);
+    color: #18191F;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 375px;
+}
+
+.icon-text h1 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #4D4D4D;
+}
+
+.icon-text p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    color: #717171;
+}
+
+.first-icon, .second-icon {
+    display: flex;
+    gap: 41px;
+}
+
+.first-icon-1, .first-icon-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec-fives{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 54px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F5F7FA;
+    padding: 22px 120px;
+}
+
+.customers-text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tim-text .tim, .green {
+    font-weight: 600;
+    font-size: 13.92px;
+    line-height: 20px;
+    color: #4CAF4F;
+}
+
+.tim-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tim-text p{
+    color: #89939E;
+}
+
+.customers-text-content p{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 17px;
+    color: #717171;
+}
+
+.bottom-logos {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-logos div {
+    display: flex;
+    gap: 24px;
+}
+
+.bottom-logos h3 {
+    margin-left: 24px;
+}
+
+.sec-six {
+    gap: 11px;
+}
+
+.sec-six p {
+    width: 438px;
+    text-align: center;
+}
+
+.community-updates-img {
+    display: flex;
+    gap: 20px;
+    /* padding-inline: 140px; */
+}
+
+.try {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.try img {
+    width: 256px;
+    height: 199px;
+    border-radius: 6px;
+}
+
+.try-text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 11px;
+    height: 124px;
+    width: 220px;
+    /* align-items: center;
+    gap: 11px;
+    height: 124px;
+    width: 220px;
+    padding: 11px; */
+    background-color: #F5F7FA;
+    background-color: #4CAF4F;
+    border-radius: 6px;
+}
+
+.try-text p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+ 
+    /* justify-content: center; */
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+.final-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+/* 
+footer button {
+    margin: 0 auto;
+}
+ */
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+    header {
+        width: 80%;
+        padding: 0;
+    }
+
+    header div {
+        display: none;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .slides {
+        flex-wrap: wrap-reverse;
+    }
+
+    .dots {
+        margin-top: 10px;
+    }
+
+    .community-logos {
+        flex-direction: column;
+    }
+
+    .sec-two, .sec-four {
+        flex-wrap: wrap;
+    }
+
+    .sec-fives {
+        flex-wrap: wrap;
+        padding: auto;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 752px) {
+    
+}
