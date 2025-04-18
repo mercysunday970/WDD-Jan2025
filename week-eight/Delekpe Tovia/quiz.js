@@ -38,12 +38,21 @@
 
 
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
+    for (const button of optionButtons){
+        button.addEventListener( 'click', function (){
+        console.log(optionButton);
+        });}
             // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
+            explanation.textContent =  "Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only."
 
-
+             
             // TODO 7: Within the event handler function, 
             // Use a for loop to disable all the option buttons
+           for (const buttons of optionButtons){
+            buttons.disabled = true;
+           }
 
+           
 
             // TODO 8: Within the event handler function,
             // Get the guessed value from the clicked button
