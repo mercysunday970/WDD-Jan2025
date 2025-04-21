@@ -31,7 +31,7 @@
     const isCorrect = guess => guess === fact.answer;
     
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
-    for (const btn of optionButtons) {
+    for (const button of optionButtons) {
         button.addEventListener("click", function(){
     });
 }
