@@ -28,11 +28,13 @@
 
     // TODO 5: Declare an isCorrect function that compares a guess to the right answer
     // isCorrect(guess) should return true if the guess matches the fact's answer
-    const isCorrect = guess => guess === fact.answer;
+    const isCorrect = guess => (guess === "true") === fact.answer;
     
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
     for (const button of optionButtons) {
         button.addEventListener("click", function(){
+            optionButtons.forEach(button => enable(button));
+            optionButtons.forEach(button => disable(button));
     });
 }
             // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
@@ -40,22 +42,27 @@
             
             // TODO 7: Within the event handler function, 
             // Use a for loop to disable all the option buttons
-            for (const btn of optionButtons) {
-                btn.disabled = true;
-                
-            }
-
+       
+            
             // TODO 8: Within the event handler function,
             // Get the guessed value from the clicked button
             // Use a conditional to compare the guess to the fact's answer
             // and add the "correct"/"incorrect" class as appropriate
-                const guessed = button.textContent.toLowerCase();
-                const correct = String(fact.answer).toLowerCase();
-                if (guessed === correct) {
-                    button.classList.add("correct");
+               for (const button of optionButtons) {
+                button.addEventListener("click", (event) =>{
+            const guess = event.target.textContent;
+                if (isCorrect(guess)) {
+                    event.target.style.backgroundColor = "green";
+                    explanation.textContent = "Correct!" + nigga;
                 } else {
-                    button.classList.add("incorrect");
-                }
+                    event.target.style.backgroundColor = "red" 
+                    explanation.textContent = "Wrong!" + fact.explanation;
+                }})
+               }
+            
+               let nigga = "You are a real nigga";
+
+                
 
         
             
