@@ -5,21 +5,24 @@
 <p>The fetch() function is used to make network requests (like getting data from an API). It returns a <b>Promise</b> that resolves with the <b>Response</b> object representing the result of the request.
 <p>WHY WE USE IT?</p>
 <ol>
-<div>To retrieve data from serves without refreshing the page</div>
-<div>To post data to a server</div>
-<div>To work with RESTful APIs in a simple, readable way</div>
+<li>To retrieve data from serves without refreshing the page</li>
+<div>To post data to a server</li>
+<li>To work with RESTful APIs in a simple, readable way</li>
 </ol>
 
 <h3>WHAT async/await DO AND HOW THEY WORK?</h3>
 <ol>
-<div><b>async</b> is a keyword used to declare a function that always return a <b>Promise</b></div>
-<div><b>await</b> is used inside an <b>async</b> function to pause execution until a <b>Promise</b> is resolved.</div>
+<li><b>async</b> is a keyword used to declare a function that always return a <b>Promise</b></div>
+<lil><b>await</b> is used inside an <b>async</b> function to pause execution until a <b>Promise</b> is resolved.</li>
+</ol>
 They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b>
 
-AN EXAMPLE:
-async function fetchUser() {
-    const response = await fetch('https://api.example.com/data');
-    const user =await res.json();
-    console.log('User Name: ${user.name}');
+<b>AN EXAMPLE:</b>
+async function fetchUser() { <br>
+    const response = await fetch('https://api.example.com/data'); <br>
+    const user =await res.json(); <br>
+    console.log('User Name: ${user.name}'); <br>
 }
-fetchUser();
+fetchUser(); <br>
+
+<p><b>Done by Emmanuel-Odjuvwederhie A.K.A Brainfriend4life</b></p>
