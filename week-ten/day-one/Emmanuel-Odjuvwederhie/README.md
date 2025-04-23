@@ -17,12 +17,15 @@
 </ol>
 <p>They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b><p>
 
-<p><b>AN EXAMPLE:</b></p><br>
-```async function fetchUser() { <br>
-    const response = await fetch('https://api.example.com/data'); <br>
+### AN EXAMPLE:
+```js
+async function fetchUser() { 
+    const response = await fetch('https://api.example.com/data'); 
     const user =await res.json(); <br>
-    console.log('User Name: ${user.name}'); <br>
-}<br>
-fetchUser(); ```<br>
+    console.log('User Name: ${user.name}'); 
+    )
+}
+fetchUser(); 
+```
 
 <p><b>Done by Emmanuel-Odjuvwederhie A.K.A Brainfriend4life</b></p>
