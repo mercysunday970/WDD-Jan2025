@@ -1,5 +1,4 @@
-# Week-Ten Assignment: Introduction to Asynchronous JavaScript
-
+# Week Ten - Day One: Introduction to Asynchronous JavaScript
 ## Assignment Overview
 
 This week's task focuses on understanding **Asynchronous JavaScript**, particularly the use of `async`, `await`, and `fetch()` to retrieve data from external APIs. You will study from provided material and submit a summary of your understanding.
@@ -72,7 +71,7 @@ Here you'll find the GitHub and Web Development activities of the WDD Jan-June 2
 
 3. **Navigate to the Weekly Project Folder**
    ```bash
-   cd week-ten
+   cd week-ten/day-one
    ```
 
 4. **Create Your Folder**
