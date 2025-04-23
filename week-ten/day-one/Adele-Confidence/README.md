@@ -5,10 +5,11 @@ Usually, JavaScript code does things that are very quick, so JavaScript can usua
 
 But when we need to do something that takes a long time, we still want the web browser to keep working.
 
-JS can only do one task at a time ("single-threaded"), So when we give JS a task that takes a while, it doesn't stop and wait. It adds the slow task to a "TODO list" and keeps on running our program. The task runs some time later, "asynchronously"
+JS can only do one task at a time ("single-threaded"), So when we give JS a task that takes a while, it doesn't stop and wait. It adds the slow task to a "TODO list" and keeps on running our program. The task runs some time later, "asynchronously".
 
 
 In JavaScript, asynchronous code refers to code that runs seperately from the main programe flow, allowing other codes to execute without waiting for it to finish. This is very useful when dealing with tasks task that take time, such as:
+
 1. Waiting for user events
 2. Asking a user to pick a file
 3. Getting permission to access the camera/mic
@@ -31,10 +32,10 @@ console.log("Watch a movies");
 
 Explanation:
 
-console.log("Order food") runs first;
-setTimeout() schedules "Food is delivered" to be printed after 3 seconds, but it doesn't stop the code;
-While waiting, console.log("Watch a movies") runs immediately.
-After 3 seconds, the message 'Food is delivere" shows up.
+1. console.log("Order food") runs first;
+2. setTimeout() schedules "Food is delivered" to be printed after 3 seconds, but it doesn't stop the code;
+3. While waiting, console.log("Watch a movies") runs immediately.
+4. After 3 seconds, the message 'Food is delivere" shows up.
 
 
 WHAT IS fetch() IN JAVASCRIPT?
@@ -51,9 +52,10 @@ It takes time for Promises to resolve, so they are "asynchronous"
 WHY DO WE USE fetch()?
 
 We use fetch to:
-Get data from a server (e.g., fetch user info from an API)
-Send data to a server (e.g., submit a form)
-Communicate with backends in web apps.
+
+1. Get data from a server (e.g., fetch user info from an API)
+2. Send data to a server (e.g., submit a form)
+3. Communicate with backends in web apps.
 
 HOW DO WE USE fetch()?
 
@@ -64,10 +66,10 @@ fetch("https://dog.ceo/api/breed/hound/list")
 
 EXPLANATION:
 
-fetch(...) sends a GET request to the API.
-.then(response => response.json()) turns the response into usuable JSON.
-.then(data => (...)) lets you work with that data.
-.catch(...) handles any errors (like no internet or a bad URL).
+1. fetch(...) sends a GET request to the API.
+2. .then(response => response.json()) turns the response into usuable JSON.
+3. .then(data => (...)) lets you work with that data.
+4. .catch(...) handles any errors (like no internet or a bad URL).
 
 
 
@@ -105,9 +107,9 @@ async function fetchData(url) {
 
 EXPLANATION:
 
-async function makes fetchData() return a promise automatically.
-await fetch(...) tekks JavaScript: "Wait until this promise is resolved before continuing".
-only after fetch and .json() are done, console.log(data) runs.
+1. async function makes fetchData() return a promise automatically.
+2. await fetch(...) tekks JavaScript: "Wait until this promise is resolved before continuing".
+3. only after fetch and .json() are done, console.log(data) runs.
 
 
 
