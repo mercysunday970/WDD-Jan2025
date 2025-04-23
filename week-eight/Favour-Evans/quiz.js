@@ -50,5 +50,12 @@
     
     // TODO 8: Within the event handler function,
         // Get the guessed value from the clicked button
+        const guessedValue = optionButtons[i].textContent.toLowerCase() === "true";
         // Use a conditional to compare the guess to the fact's answer
+        if (isCorrect(guessedValue)) {
         // and add the "correct"/"incorrect" class as appropriate
+            optionButtons[i].classList.add('correct');
+        } else {
+            optionButtons[i].classList.add('incorrect');
+        }
+      
