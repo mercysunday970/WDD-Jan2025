@@ -20,10 +20,9 @@
 ### AN EXAMPLE:
 ```js
 async function fetchUser() { 
-    const response = await fetch('https://api.example.com/data'); 
-    const user =await res.json(); <br>
+    const res = await fetch('https://api.example.com/data'); 
+    const user =await res.json(); 
     console.log('User Name: ${user.name}'); 
-    )
 }
 fetchUser(); 
 ```
