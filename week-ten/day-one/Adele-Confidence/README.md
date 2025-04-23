@@ -108,7 +108,7 @@ async function fetchData(url) {
 EXPLANATION:
 
 1. async function makes fetchData() return a promise automatically.
-2. await fetch(...) tekks JavaScript: "Wait until this promise is resolved before continuing".
+2. await fetch(...) tells JavaScript: "Wait until this promise is resolved before continuing".
 3. only after fetch and .json() are done, console.log(data) runs.
 
 
