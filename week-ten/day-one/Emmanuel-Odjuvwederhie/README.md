@@ -12,17 +12,17 @@
 
 <h3>WHAT async/await DO AND HOW THEY WORK?</h3>
 <ol>
-<li><b>async</b> is a keyword used to declare a function that always return a <b>Promise</b></div>
-<lil><b>await</b> is used inside an <b>async</b> function to pause execution until a <b>Promise</b> is resolved.</li>
+<li><b>async</b> is a keyword used to declare a function that always return a <b>Promise</b></li>
+<li><b>await</b> is used inside an <b>async</b> function to pause execution until a <b>Promise</b> is resolved.</li>
 </ol>
 They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b>
 
-<b>AN EXAMPLE:</b>
+<p><b>AN EXAMPLE:</b></p><br>
 async function fetchUser() { <br>
     const response = await fetch('https://api.example.com/data'); <br>
     const user =await res.json(); <br>
     console.log('User Name: ${user.name}'); <br>
-}
+}<br>
 fetchUser(); <br>
 
 <p><b>Done by Emmanuel-Odjuvwederhie A.K.A Brainfriend4life</b></p>
