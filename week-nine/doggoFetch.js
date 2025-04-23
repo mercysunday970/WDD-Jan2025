@@ -165,8 +165,18 @@ function shuffleArray(array) {
 function getMultipleChoices(n, correctAnswer, array) {
     // Use a while loop and the getRandomElement() function
     // Make sure there are no duplicates in the array
+    const choices = [correctAnswer];
+    while (choices.length < n) {
+        const randomChoice = getRandomElement(array);
+        if (!choices.includes(randomChoice)) {
+            choices.push(randomChoice);
+        }
+    }
+    return shuffleArray(choices);
 }
 
+const choices = getMultipleChoices(4, "pug", BREEDS);
+console.log(choices);
 // TODO 2
 // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
 // return the breed name string as formatted in the breed list, e.g. "standard poodle"
