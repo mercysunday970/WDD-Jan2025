@@ -3,7 +3,7 @@
 
 <h2>HOW AND WHY WE USE fetch()</h2>
 <p>The fetch() function is used to make network requests (like getting data from an API). It returns a <b>Promise</b> that resolves with the <b>Response</b> object representing the result of the request.
-<p>WHY WE USE IT?</p>
+<p><b>WHY WE USE IT?</b></p>
 <ol>
 <li>To retrieve data from serves without refreshing the page</li>
 <div>To post data to a server</li>
@@ -18,11 +18,11 @@
 <p>They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b><p>
 
 <p><b>AN EXAMPLE:</b></p><br>
-async function fetchUser() { <br>
+```async function fetchUser() { <br>
     const response = await fetch('https://api.example.com/data'); <br>
     const user =await res.json(); <br>
     console.log('User Name: ${user.name}'); <br>
 }<br>
-fetchUser(); <br>
+fetchUser(); ```<br>
 
 <p><b>Done by Emmanuel-Odjuvwederhie A.K.A Brainfriend4life</b></p>
