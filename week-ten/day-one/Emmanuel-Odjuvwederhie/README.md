@@ -15,7 +15,7 @@
 <li><b>async</b> is a keyword used to declare a function that always return a <b>Promise</b></li>
 <li><b>await</b> is used inside an <b>async</b> function to pause execution until a <b>Promise</b> is resolved.</li>
 </ol>
-They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b>
+<p>They provide a clearer, more readable way to work with asynchronous code, compared to chaining <b>.then()</b><p>
 
 <p><b>AN EXAMPLE:</b></p><br>
 async function fetchUser() { <br>
