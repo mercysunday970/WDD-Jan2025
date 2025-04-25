@@ -183,7 +183,7 @@ console.log(choices);
 function getBreedFromURL(url) {
     const parts = url.split("/");
     const breedSegment = parts[parts.indexOf("breeds") + 1];
-    const breedParts = breedSegment.split("-")reverse();
+    const breedParts = breedSegment.split("-");
     return breedParts.join(" ");
     
     // The string method .split(char) may come in handy
