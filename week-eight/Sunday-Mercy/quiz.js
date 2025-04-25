@@ -1,4 +1,4 @@
- // TODO 1: Declare & assign variables pointing to the corresponding element(s)
+// TODO 1: Declare & assign variables pointing to the corresponding element(s)
     // statement should be the "statement" div
     // optionButtons should be all the elements within the "options" div
     // explanation should be the "explanation" div
@@ -23,39 +23,42 @@
     // TODO 4: Declare disable & enable functions to set or remove the "disabled" attribute from a given button element
     // disable(button) should set the button element's attribute "disabled" to the value ""
     // enable(button) should remove the attribute "disabled" from the button element
-
-    const disable = button => button.setAttribute("disabled", "");
-    const enable = button => button.removeAttribute("disabled");
+    const disable = (button) => button.setAttribute("disabled", "");
     
+    const enable = (button) => button.removeAttribute("disabled");
+    
+
+
     // TODO 5: Declare an isCorrect function that compares a guess to the right answer
     // isCorrect(guess) should return true if the guess matches the fact's answer
     
-    const isCorrect = guess => guess === fact.answer;
-
+    function isCorrect(guess) {
+        return guess === fact.answer;
+    }
 
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
-    for(let i = 0;  i < optionButtons.length; i++) {
-        optionButtons[i].addEventListener('click', () => {
-
-    // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
+            // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
+    for(let button of optionButtons) {
+        button.addEventListener('click', function(event) {
             explanation.textContent = fact.explanation;
 
     // TODO 7: Within the event handler function, 
-        // Use a for loop to disable all the option buttons
-            for( let j = 0; j < optionButtons.length; j++) {
-                optionButtons.disable = true;
+    // Use a for loop to disable all the option buttons
+
+            for(let btn of optionButtons) {
+                disable(btn);
             }
-        });
-    };
-    
+
     // TODO 8: Within the event handler function,
-        // Get the guessed value from the clicked button
-        const guessedValue = optionButtons[i].textContent.toLowerCase() === "true";
-        // Use a conditional to compare the guess to the fact's answer
-        if (isCorrect(guessedValue)) {
-        // and add the "correct"/"incorrect" class as appropriate
-            optionButtons[i].classList.add('correct');
+    // Get the guessed value from the clicked button
+        const guess = event.target.textContent === "True";
+    // Use a conditional to compare the guess to the fact's answer
+        if(isCorrect(guess)) {
+        event.target.classList.add("correct");
         } else {
-            optionButtons[i].classList.add('incorrect');
+        event.target.classList.add("incorrect");
         }
-      
+    // and add the "correct"/"incorrect" class as appropriate
+
+        });
+    }
