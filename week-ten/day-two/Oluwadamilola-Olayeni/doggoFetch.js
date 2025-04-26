@@ -181,25 +181,32 @@ console.log(choices);
 // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
 // return the breed name string as formatted in the breed list, e.g. "standard poodle"
 function getBreedFromURL(url) {
-    const parts = url.split("/");
-    const breedSegment = parts[parts.indexOf("breeds") + 1];
-    const breedParts = breedSegment.split("-");
-    return breedParts.join(" ");
-    
     // The string method .split(char) may come in handy
     // Try to use destructuring as much as you can
+    const parts = url.split("/");
+    const [, , , , breedPart] = parts
+    const formattedBreed = breedPart.slit("-").reverse().join(" ");
+    return formattedBreed
 }
+getBreedFromURL(
+    "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg")
 
 // TODO 3
 // Given a URL, fetch the resource at that URL,
 // then parse the response as a JSON object,
 // finally return the "message" property of its body
 async function fetchMessage(url) { 
+    try{
+        const response = await
+        fetch(url);
+        const data = await 
+        response.json();
+        return(data.message);
+    } catch (error){
+        console.error("fetch failed:", error);
+    }
     
-        const response = await fetch(url);
-        const data = await response.json();
-        return data.message;
-    } 
+}
 // Function to add the multiple-choice buttons to the page
 function renderButtons(choicesArray, correctAnswer) {
     // Event handler function to compare the clicked button's value to correctAnswer
@@ -222,14 +229,16 @@ function renderButtons(choicesArray, correctAnswer) {
     // Create a button element whose name, value, and textContent properties are the value of that choice,
     // attach a "click" event listener with the buttonHandler function,
     // and append the button as a child of the options element
-    choicesArray.forEach((choice) => {
-        const button = document.createElement("button");
-        button.name = choice;
-        button.value = choice;
-        button.textContent = choice;
-        button.addEventListener("click", buttonHandler);
-        options.appendChild(button);
-    });
+   for (const choice of choicesArray) {
+        const btn = document.createElement("btn");
+        btn.name = choice;
+        btn.value = choice;
+        btn.textContent = choice;
+
+        btn.addEventListener('click', buttonHandler);
+        options.appendChild(btn);
+    }
+}
 
 // Function to add the quiz content to the page
 function renderQuiz(imgUrl, correctAnswer, choices) {
@@ -259,3 +268,11 @@ async function loadQuizData() {
 // TODO 5
 // Asynchronously call the loadQuizData() function,
 // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
+async function startQuiz() {
+    const [imgUrl, correctAnswer, choices] = await loadQuizData();
+    renderQuiz(imgUrl, correctAnswer, choices)
+}
+
+
+startQuiz();
+
