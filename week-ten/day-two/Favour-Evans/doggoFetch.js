@@ -177,6 +177,7 @@ function getMultipleChoices(n, correctAnswer, array) {
 
 const choices = getMultipleChoices(4, "pug", BREEDS);
 console.log(choices);
+
 // TODO 2
 // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
 // return the breed name string as formatted in the breed list, e.g. "standard poodle"
@@ -185,7 +186,8 @@ function getBreedFromURL(url) {
     // Try to use destructuring as much as you can
     const parts = url.split("/");
     const [, , , , breedPart] = parts
-    return breedPart
+    const formattedBreed = breedPart.split("-").reverse().join(" ");
+    return formattedBreed
 }
 
 getBreedFromURL("https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg")
@@ -273,3 +275,4 @@ async function loadQuizData() {
     }
 
 startQuiz();
+
