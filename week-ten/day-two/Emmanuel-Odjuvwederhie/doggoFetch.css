@@ -44,3 +44,14 @@ button {
 .hidden {
     display: none;
 }
+#play-again {
+    background-color: blueviolet;
+    color: white;
+    border: solid;
+    width: 10%;
+    text-align: center;
+    align-items: center;
+   margin-left: 35rem;
+   margin-top: 2rem;
+   cursor: pointer;
+}

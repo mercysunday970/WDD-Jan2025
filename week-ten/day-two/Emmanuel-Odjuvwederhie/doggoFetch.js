@@ -180,14 +180,17 @@ console.log(choices);
 // TODO 2
 // Given a URL such as "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
 // return the breed name string as formatted in the breed list, e.g. "standard poodle"
+
+    // The string method .split(char) may come in handy
+    // Try to use destructuring as much as you can
+    const url = "https://images.dog.ceo/breeds/poodle-standard/n02113799_2280.jpg"
+
 function getBreedFromURL(url) {
     const parts = url.split("/");
     const breedPart = parts[parts.indexOf("breeds") + 1];
-    let breed = breedPart.split("_");
+    let breed = breedPart.split("-");
     breed = breed.length > 1 ? `${breed[1]} ${breed[0]}` : breed[0];
     return breed;
-    // The string method .split(char) may come in handy
-    // Try to use destructuring as much as you can
 }
 
 // TODO 3
@@ -227,7 +230,7 @@ function renderButtons(choicesArray, correctAnswer) {
         button.name = choice;
         button.value = choice;
         button.textContent = choice;
-        button.addEventListener("click", () => buttonHandler (choice, correctAnswer));
+        button.addEventListener("click", buttonHandler)
         options.appendChild(button);
     }
 }
@@ -260,6 +263,10 @@ async function loadQuizData() {
 // TODO 5
 // Asynchronously call the loadQuizData() function,
 // Then call renderQuiz() with the returned imageUrl, correctAnswer, and choices
-loadQuizData().then(({ imageUrl, correctAnswer, choices}) => {
+loadQuizData().then(([ imageUrl, correctAnswer, choices]) => {
     renderQuiz(imageUrl, correctAnswer, choices);
+});
+const play = document.getElementById("play-again")
+play.addEventListener("click", () => {
+    loadQuizData();
 })
