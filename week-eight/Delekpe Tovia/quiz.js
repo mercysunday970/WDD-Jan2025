@@ -67,7 +67,7 @@
                    explanation.textContent = "correct";
                    
                     }else {
-                       explanation.textContent = "Wrong, try again!";
+                       explanation.textContent = "Wrong, try agains!";
                        
                     }})
                 }
