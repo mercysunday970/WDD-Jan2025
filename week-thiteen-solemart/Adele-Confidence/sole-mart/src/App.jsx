@@ -1,14 +1,15 @@
-import NavBar from "./components/NavBar"
-import Body from "./components/Body"
-import Drop from "./components/Drop"
+import NavBar from "./components/NavBar";
+import Body from "./components/Body";
+import Drop from "./components/Drop";
 
 const App = () => {
   return (
-    <div className="container mx-auto">
-      <NavBar/>
-      <Body/>
-      <Drop/>
-    </div>
+    <>
+    
+      <NavBar />
+      <Body />
+      <Drop />
+   </> 
   )
 }
 
